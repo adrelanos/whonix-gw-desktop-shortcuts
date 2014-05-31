@@ -1,0 +1,60 @@
+#!/bin/bash
+
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+if [ -f /usr/lib/pre.bsh ]; then
+   source /usr/lib/pre.bsh
+fi
+
+set -e
+
+true "
+####################################################################
+## INFO: Begin $DPKG_MAINTSCRIPT_NAME $DPKG_MAINTSCRIPT_PACKAGE...
+####################################################################
+"
+
+case "$1" in
+   configure)
+      true "INFO: Configuring $DPKG_MAINTSCRIPT_PACKAGE..."
+
+      sudo -u user mkdir --parents /home/user/Desktop
+      sudo -u user ln -s /usr/share/applications/kde4/konsole.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/whonix_repository.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/whonixcheck.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-arm.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-firewall30default.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-firewall50user.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-firsttimesetup.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-reloadfirewall.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-reloadtor.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-restarttor.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-stoptor.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/timesync.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-torrc.desktop /home/user/Desktop/ || true
+      sudo -u user ln -s /usr/share/applications/gateway-torrcexamples.desktop /home/user/Desktop/ || true
+
+      true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
+
+      ;;
+
+   *)
+      ;;
+esac
+
+true "INFO: debhelper beginning here."
+
+#DEBHELPER#
+
+true "INFO: Done with debhelper."
+
+true "
+####################################################################
+## INFO: $DPKG_MAINTSCRIPT_NAME script $DPKG_MAINTSCRIPT_PACKAGE no error detected.
+####################################################################
+"
+
+## Explicitly "exit 0", so eventually trapped errors can be ignored.
+exit 0
