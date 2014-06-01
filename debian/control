@@ -14,7 +14,7 @@ Standards-Version: 3.9.4
 
 Package: whonix-gw-desktop-shortcuts
 Architecture: all
-Depends: anon-gw-base-files, ${misc:Depends}
+Depends: anon-gw-base-files, sudo, ${misc:Depends}
 Recommends: anon-icon-pack
 Description: Desktop Icons for Whonix-Gateway
  Creates shortcuts on the desktop, which are useful for Whonix-Gateway.
