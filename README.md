@@ -1,6 +1,7 @@
 # Desktop Icons for Whonix-Gateway #
 
-Creates shortcuts on the desktop, which are useful for Whonix-Gateway.
+A metapackage, that creates shortcuts on the desktop, which are useful for
+Whonix-Gateway.
 
 (This package description has been [automatically](https://github.com/Whonix/whonix-developer-meta-files/blob/master/debug-steps/packaging-helper-script) extracted and mirrored from `debian/control`.)
 
