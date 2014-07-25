@@ -19,3 +19,7 @@ Recommends: anon-icon-pack
 Description: Desktop Icons for Whonix-Gateway
  A metapackage, that creates shortcuts on the desktop, which are useful for
  Whonix-Gateway.
+ .
+ For better usability.
+ .
+ Safe to remove.
