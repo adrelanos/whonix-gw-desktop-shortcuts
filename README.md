@@ -3,6 +3,10 @@
 A metapackage, that creates shortcuts on the desktop, which are useful for
 Whonix-Gateway.
 
+For better usability.
+
+Safe to remove.
+
 (This package description has been [automatically](https://github.com/Whonix/whonix-developer-meta-files/blob/master/debug-steps/packaging-helper-script) extracted and mirrored from `debian/control`.)
 
 # Generic Readme #
