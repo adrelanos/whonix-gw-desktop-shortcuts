@@ -16,25 +16,40 @@ true "
 ####################################################################
 "
 
+create_desktop_shortcuts() {
+   sudo -u user mkdir --parents /home/user/Desktop
+
+   local files_list file_name
+
+   files_list="
+      /usr/share/applications/kde4/konsole.desktop
+      /usr/share/applications/whonix_repository.desktop
+      /usr/share/applications/whonixcheck.desktop
+      /usr/share/applications/gateway-arm.desktop
+      /usr/share/applications/gateway-firewall30default.desktop
+      /usr/share/applications/gateway-firewall50user.desktop
+      /usr/share/applications/gateway-firsttimesetup.desktop
+      /usr/share/applications/gateway-reloadfirewall.desktop
+      /usr/share/applications/gateway-reloadtor.desktop
+      /usr/share/applications/gateway-restarttor.desktop
+      /usr/share/applications/gateway-stoptor.desktop
+      /usr/share/applications/timesync.desktop
+      /usr/share/applications/gateway-torrc.desktop
+      /usr/share/applications/gateway-torrcexamples.desktop
+   "
+
+   for file_name in $files_list; do
+      #if [ -f "$file_name" ]; then
+      sudo -u user ln -s "$file_name" /home/user/Desktop/ || true
+      #fi
+   done
+}
+
 case "$1" in
    configure)
       true "INFO: Configuring $DPKG_MAINTSCRIPT_PACKAGE..."
 
-      sudo -u user mkdir --parents /home/user/Desktop
-      sudo -u user ln -s /usr/share/applications/kde4/konsole.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/whonix_repository.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/whonixcheck.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-arm.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-firewall30default.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-firewall50user.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-firsttimesetup.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-reloadfirewall.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-reloadtor.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-restarttor.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-stoptor.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/timesync.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-torrc.desktop /home/user/Desktop/ || true
-      sudo -u user ln -s /usr/share/applications/gateway-torrcexamples.desktop /home/user/Desktop/ || true
+      create_desktop_shortcuts
 
       true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
 
