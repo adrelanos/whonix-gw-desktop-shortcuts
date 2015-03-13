@@ -28,7 +28,7 @@ create_desktop_shortcuts() {
       /usr/share/applications/gateway-arm.desktop
       /usr/share/applications/gateway-firewall30default.desktop
       /usr/share/applications/gateway-firewall50user.desktop
-      /usr/share/applications/gateway-firsttimesetup.desktop
+      /usr/share/applications/whonix_setup.desktop
       /usr/share/applications/gateway-reloadfirewall.desktop
       /usr/share/applications/gateway-reloadtor.desktop
       /usr/share/applications/gateway-restarttor.desktop
