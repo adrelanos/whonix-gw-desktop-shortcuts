@@ -1,3 +1,31 @@
+commit 996d181d4e7de51b61655f0a6fdca9a28a729144
+Merge: e69bb5a 3057067
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 10 14:07:51 2015 +0000
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 3057067785098a60946fdfa184a5007bce543198
+Merge: e69bb5a 8c9308d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Jul 10 16:06:56 2015 +0200
+
+    Merge pull request #1 from HulaHoopWhonix/patch-1
+    
+    Added gateway-tordata.desktop to file list
+
+commit 8c9308d01b20f2219640b20f8608eb1b5df75b94
+Author: HulaHoopWhonix <bancfc@openmailbox.org>
+Date:   Mon Jun 22 18:07:19 2015 +0000
+
+    Added gateway-tordata.desktop to file list
+
+commit e69bb5af699fe846337b3ea2c3b1ad09857f75ab
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 3 15:00:34 2015 +0000
+
+    bumped changelog version
+
 commit 89e6802ecbdbded296a62eac440c1096293678b8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 30 17:57:06 2015 +0000
