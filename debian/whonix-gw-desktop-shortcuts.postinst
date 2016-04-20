@@ -33,7 +33,6 @@ create_desktop_shortcuts() {
       /usr/share/applications/gateway-reloadtor.desktop
       /usr/share/applications/gateway-restarttor.desktop
       /usr/share/applications/gateway-stoptor.desktop
-      /usr/share/applications/timesync.desktop
       /usr/share/applications/gateway-tordata.desktop
       /usr/share/applications/gateway-torrc.desktop
       /usr/share/applications/gateway-torrcexamples.desktop
