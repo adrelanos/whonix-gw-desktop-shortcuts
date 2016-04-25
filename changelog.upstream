@@ -1,3 +1,15 @@
+commit c0b77b92ea03d4a9280af39c927cb53b38156e5a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Apr 20 04:16:02 2016 +0000
+
+    removed timesync
+
+commit afdb95e561dc9ef89588252607dcdcaab8c7f950
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Aug 25 14:08:31 2015 +0000
+
+    bumped changelog version
+
 commit f75de32fe22e4d6a803f793d2022dedbe1a42da8
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Aug 24 17:47:32 2015 +0000
