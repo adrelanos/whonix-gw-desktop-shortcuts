@@ -17,7 +17,7 @@ true "
 "
 
 create_desktop_shortcuts() {
-   sudo -u user mkdir --parents /home/user/Desktop
+   sudo --non-interactive -u user mkdir --parents /home/user/Desktop
 
    local files_list file_name basename_file_name
 
@@ -44,7 +44,7 @@ create_desktop_shortcuts() {
          unlink "/home/user/Desktop/$basename_file_name" || true
       fi
       #if [ -f "$file_name" ]; then
-      sudo -u user ln -s "$file_name" /home/user/Desktop/ || true
+      sudo --non-interactive -u user ln -s "$file_name" /home/user/Desktop/ || true
       #fi
    done
 }
