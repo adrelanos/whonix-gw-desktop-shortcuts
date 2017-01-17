@@ -53,7 +53,7 @@ case "$1" in
    configure)
       true "INFO: Configuring $DPKG_MAINTSCRIPT_PACKAGE..."
 
-      create_desktop_shortcuts
+      #create_desktop_shortcuts
 
       true "INFO: End configuring $DPKG_MAINTSCRIPT_PACKAGE."
 
