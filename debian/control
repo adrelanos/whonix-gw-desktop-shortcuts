@@ -14,7 +14,7 @@ Standards-Version: 3.9.8
 
 Package: whonix-gw-desktop-shortcuts
 Architecture: all
-Depends: anon-gw-base-files, sudo, ${misc:Depends}
+Depends: anon-gw-base-files, ${misc:Depends}
 Recommends: anon-icon-pack
 Replaces: anon-gw-kde-startmenu
 Description: Desktop Icons and KDE Start Menu Favorites for Whonix-Gateway
