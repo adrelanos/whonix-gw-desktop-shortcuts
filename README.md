@@ -1,7 +1,10 @@
-# Desktop Icons for Whonix-Gateway #
+# Desktop Icons and KDE Start Menu Favorites for Whonix-Gateway #
 
 A metapackage, that creates shortcuts on the desktop, which are useful for
 Whonix-Gateway.
+
+Configures KDE Kickoff favorites. (Takes effect for newly
+created user accounts. Not for existing user accounts.)
 
 For better usability.
 
