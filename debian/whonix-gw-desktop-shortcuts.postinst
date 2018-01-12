@@ -28,7 +28,7 @@ create_desktop_shortcuts() {
 
    files_list="
       /usr/share/applications/org.kde.konsole.desktop
-      /usr/share/applications/whonix_repository.desktop
+      /usr/share/applications/whonix-repository-wizard.desktop
       /usr/share/applications/whonixcheck.desktop
       /usr/share/applications/gateway-arm.desktop
       /usr/share/applications/gateway-firewall30default.desktop
