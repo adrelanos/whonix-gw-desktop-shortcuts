@@ -1,3 +1,27 @@
+commit 47c483a1e2ea65046f52e6a3ea870563c57d698a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Feb 3 15:52:27 2018 +0000
+
+    add /usr/share/applications/gateway-torrc.desktop to favorites
+
+commit e884298ad4e46b3a6b483fb3729adde7d01f20ae
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Feb 3 15:50:55 2018 +0000
+
+    add /usr/share/applications/gateway-tordata.desktop to favorites
+
+commit 1bb3f99b8437f05d2d495db05df41dfd1ed9d32b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Feb 3 15:49:06 2018 +0000
+
+    add /usr/share/applications/anon_connection_wizard.desktop to favorites
+
+commit 71c70feb4f017ed09a0739599662946d786bb0b7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 1 15:31:53 2018 +0000
+
+    bumped changelog version
+
 commit 0f43fc3e85949f07be717f0095e80c8b1852cf47
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 29 15:50:55 2018 +0000
