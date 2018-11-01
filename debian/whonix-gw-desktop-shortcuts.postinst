@@ -35,7 +35,7 @@ create_desktop_shortcuts() {
       /usr/share/applications/whonix-firewall50user.desktop
       /usr/share/applications/whonix-reloadfirewall.desktop
       /usr/share/applications/gateway-reloadtor.desktop
-      /usr/share/applications/gateway-restarttor.desktop
+      /usr/share/applications/restart-tor-gui.desktop
       /usr/share/applications/gateway-stoptor.desktop
       /usr/share/applications/gateway-tordata.desktop
       /usr/share/applications/gateway-torrc.desktop
