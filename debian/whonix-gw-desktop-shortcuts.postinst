@@ -40,6 +40,7 @@ create_desktop_shortcuts() {
       /usr/share/applications/gateway-tordata.desktop
       /usr/share/applications/gateway-torrc.desktop
       /usr/share/applications/gateway-torrcexamples.desktop
+      /usr/share/applications/tor-control-panel.desktop
    "
 
    for file_name in $files_list; do
