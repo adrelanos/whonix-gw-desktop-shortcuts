@@ -27,13 +27,13 @@ create_desktop_shortcuts() {
 
    files_list="
       /usr/share/applications/org.kde.konsole.desktop
+      /usr/share/applications/exo-terminal-emulator.desktop
       /usr/share/applications/whonix-repository-wizard.desktop
       /usr/share/applications/whonixcheck.desktop
       /usr/share/applications/gateway-arm.desktop
-      /usr/share/applications/gateway-firewall30default.desktop
-      /usr/share/applications/gateway-firewall50user.desktop
-      /usr/share/applications/whonix_setup.desktop
-      /usr/share/applications/gateway-reloadfirewall.desktop
+      /usr/share/applications/whonix-firewall30default.desktop
+      /usr/share/applications/whonix-firewall50user.desktop
+      /usr/share/applications/whonix-reloadfirewall.desktop
       /usr/share/applications/gateway-reloadtor.desktop
       /usr/share/applications/gateway-restarttor.desktop
       /usr/share/applications/gateway-stoptor.desktop
@@ -43,12 +43,14 @@ create_desktop_shortcuts() {
    "
 
    for file_name in $files_list; do
-      basename_file_name="$(basename "$file_name")"
-      if [ -h "/home/user/Desktop/$basename_file_name" ]; then
-         unlink "/home/user/Desktop/$basename_file_name" || true
-      fi
-      ln -s "$file_name" /home/user/Desktop/ || true
-      chown --recursive user:user /home/user/Desktop/ || true
+	if [ -f "$file_name" ]; then
+	      basename_file_name="$(basename "$file_name")"
+	      if [ -h "/home/user/Desktop/$basename_file_name" ]; then
+		 unlink "/home/user/Desktop/$basename_file_name" || true
+	      fi
+	      ln -s "$file_name" /home/user/Desktop/ || true
+	      chown --recursive user:user /home/user/Desktop/ || true
+	fi
    done
 }
 
