@@ -1,3 +1,43 @@
+commit f508536cae879e3cc081cf33ff78cdc631040c57
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Oct 31 23:56:10 2018 -0400
+
+    replace /usr/share/applications/gateway-restarttor.desktop with /usr/share/applications/restart-tor-gui.desktop
+
+commit b81946eacffbe1b834a51b657f112f4bbbc54050
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Oct 31 23:55:14 2018 -0400
+
+    add /usr/share/applications/tor-control-panel.desktop
+
+commit 78eca343e51a41009e74d4d8c1018ff73563a84a
+Merge: 1bed3fc 6cd4b2a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Oct 31 23:54:28 2018 -0400
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 6cd4b2a57a1281482b391c8cbc1ec62e2cb4c923
+Merge: 1bed3fc 6c35a41
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Oct 31 23:51:30 2018 -0400
+
+    Merge pull request #2 from Algernon-01/master
+    
+    Fixes for Xfce.
+
+commit 6c35a416ee720bd6eb8cff3a98771dd4bf93e25d
+Author: Algernon-01 <33966997+Algernon-01@users.noreply.github.com>
+Date:   Wed Oct 31 18:00:38 2018 +0000
+
+    Fixes for Xfce.
+
+commit 1bed3fc869e2e6a3395032739e3fe1a19abc0d37
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 16:59:26 2018 +0000
+
+    bumped changelog version
+
 commit 1857b0bd84b0c6bd44c62f413fef7cf73128cc5f
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 21 05:18:54 2018 +0800
