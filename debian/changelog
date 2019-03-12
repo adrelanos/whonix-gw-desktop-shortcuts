@@ -1,3 +1,9 @@
+whonix-gw-desktop-shortcuts (3:2.6-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 12 Mar 2019 11:45:50 +0000
+
 whonix-gw-desktop-shortcuts (3:2.5-1) unstable; urgency=medium
 
   * New upstream version (local package).
